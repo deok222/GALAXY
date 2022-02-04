@@ -40,11 +40,6 @@ ul {
 /* /기본작업 */
 
 /* header */
-.slide {
-  height: 500px;
-  background-color: var(--bgColor);
-}
-
 header .inner {
   display: flex;
   align-items: center;
@@ -69,6 +64,7 @@ header .inner ul li a:hover {
   color: var(--accent);
 }
 
+/* 하단 바 애니메이션 */
 header .inner ul li a::before {
   color: var(--accent);
   content: "";
@@ -83,7 +79,9 @@ header .inner ul li a::before {
 header .inner ul li a:hover::before {
   width: 100%;
 }
+/* /하단 바 애니메이션 */
 
+/* 하단 바 예시 디자인 */
 header .inner ul li a.active::before {
   color: var(--accent);
   content: "";
@@ -103,4 +101,10 @@ header .inner h1 {
 header .inner i {
   margin-left: 60px;
   font-size: 20px;
+}
+
+/* slide */
+.slide {
+  height: 500px;
+  background-color: var(--bgColor);
 }
