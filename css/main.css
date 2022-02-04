@@ -30,9 +30,77 @@ ul {
 
 .inner {
   width: 1160px;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   margin: 0 auto;
+}
+
+.active {
+  color: var(--accent);
 }
 /* /기본작업 */
 
 /* header */
+.slide {
+  height: 500px;
+  background-color: var(--bgColor);
+}
+
+header .inner {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+header .inner ul {
+  display: flex;
+  gap: 60px;
+}
+
+header .inner ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  /* background-color: red; */
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+}
+
+header .inner ul li a:hover {
+  color: var(--accent);
+}
+
+header .inner ul li a::before {
+  color: var(--accent);
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: var(--accent);
+  position: absolute;
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+header .inner ul li a:hover::before {
+  width: 100%;
+}
+
+header .inner ul li a.active::before {
+  color: var(--accent);
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: var(--accent);
+  position: absolute;
+  bottom: 0;
+}
+
+header .inner h1 {
+  margin-right: auto;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header .inner i {
+  margin-left: 60px;
+  font-size: 20px;
+}
