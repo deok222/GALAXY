@@ -443,6 +443,36 @@ footer {
   font-size: 30px;
 }
 
+/* footer_menu */
+
+.footer_menu {
+  display: flex;
+}
+
+.footer_menu a:hover {
+  text-decoration: underline;
+}
+
+.footer_menu > li {
+  width: 200px;
+}
+
+.footer_menu > li > a {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 20px 20px 0px;
+  display: inline-block;
+}
+
+.footer_menu {
+  margin-top: 26px;
+}
+
+.footer_menu ul li a {
+  display: block;
+  padding: 16px 0;
+}
+
 .copyright {
   margin-top: 60px;
   font-size: 12px;
